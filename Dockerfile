@@ -1,7 +1,7 @@
-FROM ubuntu:16.04
+FROM python:latest
 
-RUN apt-get update && apt-get install -y python python-pip
-RUN pip install --upgrade pip
+# RUN apt-get update && apt-get install -y python python-pip
+# RUN pip install --upgrade pip
 
 COPY app.py /opt/
 COPY requirements.txt /opt/
